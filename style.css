@@ -4,11 +4,42 @@
 
 .header {
     display: flex;
+    padding: 7px 20px;
     background-color: rgb(50, 167, 145);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+}
+
+.header form {
+    justify-content: end;
 }
 
 .trybewarts-login {
     display: flex;
-    border: 1px solid red;
-    height: 20px;
 }
+
+.trybewarts-header-logo {
+    height: 60px;
+}
+
+#campoEmail, #campoSenha {
+    border: none;
+    width: 120px;
+    height: 30px;
+    margin-right: 7px;
+    border-radius: 3px;
+    padding: 0 0 0 10px;
+}
+
+#login {
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: rgb(87, 21, 148);
+    color: white;
+    font-weight: 700;
+}
+
