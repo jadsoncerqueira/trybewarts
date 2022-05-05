@@ -1,5 +1,6 @@
 * {
     margin: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .header {
@@ -50,4 +51,8 @@
 #evaluation-form {
     width: 675px;
     flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+    height: 500px;
 }
