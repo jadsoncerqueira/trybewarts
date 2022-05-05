@@ -1,3 +1,5 @@
+
+// FUNÇÃO QUE VERIFICA DADOS DE EMAIL E SENHA
 function login() {
     let email = document.querySelector('#campoEmail');
     let senha = document.querySelector('#campoSenha');

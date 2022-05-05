@@ -8,6 +8,8 @@
     <title>Projeto Trybewarts</title>
 </head>
 <body>
+
+    <!-- CABEÇALHO -->
     <header class="header">
         <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -17,18 +19,25 @@
             <button id="login">Entrar</button>
         </form>
     </header>
+
+    <!-- CONTEUDO PRINCIPAL -->
     <main id="conteudo-principal">
-        <section id="secao-formulario">
+
+        <!-- SECTION FORMULARIO DE INSCRIÇÃO -->
+        <section id="section-formulario">
+            <h2>Formulário de inscrição</h2>
             <form id="evaluation-form" action="">
 
-                <section class="nome-sobrenome">
+            
+                <div class="nome-sobrenome">
                     <input placeholder="Nome" type="text" name="name" id="campoNome">
                     <input placeholder="Sobrenome" type="text" name="lastname" id="campoSobrenome">
-                </section>
+                </div>
 
                 <div class="email-house">
-                    <input placeholder="Enail" type="email" name="email" id="campoEmailInscricao">
+                    <input placeholder="Email" type="email" name="email" id="campoEmailInscricao">
 
+                    <label for="house">Casa</label>
                     <select name="" id="house">
                         <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                         <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -37,14 +46,20 @@
                     </select>
                 </div>
 
+                <hr>
+
                 <label for="" id="label-family">Qual sua família?</label>
-                <input type="radio" name="family" id="" value="Frontend">
-                <input type="radio" name="family" id="" value="Backend">
-                <input type="radio" name="family" id="" value="FullStack">
-                
+
+                <label for="ft"><input type="radio" name="family" id="ft" value="Frontend">Frontend</label>
+
+                <label for="bk"><input type="radio" name="family" id="bk" value="Backend">Backend</label> 
+                <label for="fs"><input type="radio" name="family" id="fs" value="FullStack">FullStack</label>
+
             </form>
         </section>
-        <section id="secao-logo">
+
+        <!-- SECTION LOGO -->
+        <section id="section-logo">
             <img id="trybewarts-forms-logo" src="./images/trybewarts-colored.svg" alt="">
         </section>
     </main>
