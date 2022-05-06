@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css" media="(max-width: 1000px)">
     <title>Projeto Trybewarts</title>
 </head>
 <body>
 
     <!-- CABEÇALHO -->
     <header class="header">
-        <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="">
+        <img class="trybewarts-header-logo" id="img" src="./images/trybewarts-header-logo.svg" alt="">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login" action="">
             <input placeholder="Email" type="email" name="email" id="campoEmail">
@@ -37,7 +38,7 @@
                 <div class="email-house">
                     <input placeholder="Email" type="email" name="email" id="input-email">
 
-                    <label for="house">Casa</label>
+                    <label id="lh" for="house">Casa</label>
                     <select name="house" id="house">
                         <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                         <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -100,9 +101,10 @@
                 <textarea name="" id="textarea" maxlength="500" cols="30" rows="10"></textarea>
                 <p id="counter"></p>
 
-                <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
-                <input type="checkbox" name="" id="agreement">
-
+                <div id="div2">
+                    <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
+                    <input type="checkbox" name="" id="agreement">
+                </div>
                 <button type="submit" id="submit-btn" disabled>Enviar</button>
             </form>
         </section>
@@ -113,7 +115,7 @@
         </section>
 
     </main>
-    <footer>Direitos reservados à Trybewarts©</footer>
+    <footer id="footer">Direitos reservados à Trybewarts©</footer>
     
 </body>
 <script src="script.js"></script>
