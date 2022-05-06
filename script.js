@@ -55,7 +55,6 @@ const cas = document.getElementById('house');
 // DECLARAÇÃO DE VALOR
 let nomeSobrenome = `Nome: ${nam.value} ${sNam.value}`;
 let email = `Email: ${em.value}`;
-const casa = 'Nenhuma casa selecionada';
 let familia = 'Familia não selecionada';
 let materias = [];
 let avaliacao = 'Não Avaliado';
