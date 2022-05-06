@@ -26,3 +26,15 @@ function habilitar () {
 }
 
 check.addEventListener('click', habilitar)
+
+//FUNÇÃO QUE CRIA O CONTADOR
+const contador = document.getElementById('counter');
+const text = document.getElementById('textarea')
+
+function contar () {
+  let sobra = text.maxLength - text.value.length;
+  contador.innerText = sobra;
+}
+
+contar()
+text.addEventListener('keyup', contar)
