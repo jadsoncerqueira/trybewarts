@@ -11,3 +11,18 @@ function login() {
 
 const btnLogin = document.querySelector('#login');
 btnLogin.addEventListener('click', login);
+
+
+//FUNÇÃO QUE HABILITA BOTÃO DE ENVIAR
+const check = document.getElementById('agreement');
+
+function habilitar () {
+  const enviar = document.getElementById('submit-btn')
+  if(check.checked === true) {
+    enviar.disabled = false
+  } else {
+    enviar.disabled = true
+  }
+}
+
+check.addEventListener('click', habilitar)
