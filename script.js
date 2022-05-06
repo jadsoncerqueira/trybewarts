@@ -12,29 +12,28 @@ function login() {
 const btnLogin = document.querySelector('#login');
 btnLogin.addEventListener('click', login);
 
-
-//FUNÇÃO QUE HABILITA BOTÃO DE ENVIAR
+// FUNÇÃO QUE HABILITA BOTÃO DE ENVIAR
 const check = document.getElementById('agreement');
 
-function habilitar () {
-  const enviar = document.getElementById('submit-btn')
-  if(check.checked === true) {
-    enviar.disabled = false
+function habilitar() {
+  const enviar = document.getElementById('submit-btn');
+  if (check.checked === true) {
+    enviar.disabled = false;
   } else {
-    enviar.disabled = true
+    enviar.disabled = true;
   }
 }
 
-check.addEventListener('click', habilitar)
+check.addEventListener('click', habilitar);
 
-//FUNÇÃO QUE CRIA O CONTADOR
+// FUNÇÃO QUE CRIA O CONTADOR
 const contador = document.getElementById('counter');
-const text = document.getElementById('textarea')
+const text = document.getElementById('textarea');
 
-function contar () {
-  let sobra = text.maxLength - text.value.length;
+function contar() {
+  const sobra = text.maxLength - text.value.length;
   contador.innerText = sobra;
 }
 
-contar()
-text.addEventListener('keyup', contar)
+contar();
+text.addEventListener('keyup', contar);
